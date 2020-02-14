@@ -1,6 +1,6 @@
 {
-    "name": "vwp-auth",
-    "version": "1.0.0",
+    "name": "snac-api",
+    "version": "0.1.0",
     "description": "",
     "main": "server.js",
     "scripts": {
