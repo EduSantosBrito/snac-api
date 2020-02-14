@@ -31,7 +31,7 @@ class App {
     }
 
     listen() {
-        const port: number = Number(process.env.PORT);
+        const port: number = Number(process.env.PORT) || 3000;
         const httpServer = createServer(this.app);
         httpServer.listen(port, async () => {
             try {
