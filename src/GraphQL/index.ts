@@ -1,12 +1,12 @@
 import { GraphQLSchema } from 'graphql';
 import { makeExecutableSchema } from 'graphql-tools';
 import { mergeTypes } from 'merge-graphql-schemas';
-import HelloWorld from './HelloWorld';
+import IpChecker from './IpChecker';
 
-const typeDefs = mergeTypes([HelloWorld.schemas]);
+const typeDefs = mergeTypes([IpChecker.schemas]);
 const resolvers = {
     Query: {
-        ...HelloWorld.queries,
+        ...IpChecker.queries,
     },
 };
 
